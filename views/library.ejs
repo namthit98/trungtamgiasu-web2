@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <title>Thư viện</title>
+    <style>
+        :root {
+            /* --main-color: #2E9EE6;
+            --second-color: #ffb100; */
+
+            --main-color: #ff0000;
+            --second-color: #ffb100; 
+        }
+
+        .hotline span {
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .phone {
+            color: var(--main-color);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .my-nav.nav-pills .nav-link.active {
+            background: var(--main-color);
+            color: white !important
+        }
+
+        ul.my-nav li:hover {
+            background: var(--main-color);
+            border-radius: .25rem;
+        }
+
+        ul.my-nav li:hover>a {
+            color: white !important;
+        }
+
+        .my-dropdown .title li a {
+            color: var(--main-color);
+        }
+
+        .button-wrapper {
+            background: var(--main-color);
+            color: white;
+            /* width: 100vw; */
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+
+        .button-wrapper .navbar-toggler {
+            outline: none;
+            color: white;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            text-transform: uppercase;
+        }
+
+        nav.navbar {
+            padding-bottom: 0;
+        }
+
+        .banner {
+            overflow: hidden;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .navbar-collapse {
+            background: var(--main-color);
+            margin-top: -8px;
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+
+        .navbar-collapse ul.my-nav li>a {
+            color: white !important;
+        }
+
+        .my-dropdown {
+            color: black;
+            cursor: pointer;
+            background: #F1F1F1;
+            margin-left: -8px;
+            border-radius: 0;
+            width: 100vw;
+            border: none;
+        }
+
+        .my-dropdown .title {
+            color: var(--main-color) !important;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .my-dropdown ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .my-dropdown ul li:hover {
+            color: var(--main-color);
+            background: transparent;
+        }
+
+        .my-dropdown.dropdown-menu ul li>a {
+            text-decoration: none;
+            color: black !important;
+        }
+
+        .my-dropdown.dropdown-menu ul li:hover a {
+            text-decoration: none;
+            color: var(--main-color) !important;
+        }
+
+        .navbar-light .navbar-nav .show>.nav-link {
+            background: var(--main-color);
+        }
+
+        .bredcrumb-wrapper {
+            background: #F5F5F5;
+            margin-bottom: 10px;
+        }
+
+        .bredcrumb-wrapper ol.breadcrumb {
+            background: transparent;
+            margin: 0;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .breadcrumb-item a {
+            text-decoration: none;
+        }
+
+        .sidebar .item {
+            border-bottom: 2px dashed var(--second-color);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar .item:last-child {
+            border-bottom: none;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        .sidebar .item-content h5 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .sidebar .item-content h5 a:hover {
+            color: var(--main-color);
+        }
+
+        .one-new {
+            display: inline-block;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .one-new .cat-img {
+            float: left;
+            width: 30%;
+        }
+
+        .one-new .cat-excerpt {
+            float: left;
+            width: 70%;
+            padding-left: 15px;
+        }
+
+        .one-new .cat-excerpt h5 {
+            margin-top: 0;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+        .one-new .cat-excerpt>span {
+            color: #666;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+
+        .one-new .cat-excerpt p {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        footer {
+            background: #0B0900;
+            padding: 20px 0;
+        }
+
+        footer .footer-title {
+            border-bottom: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        footer .footer-title h3 {
+            border-bottom: 1px solid #fff;
+            color: var(--second-color);
+            font-family: sfu_eurostilecondensed;
+            font-size: 15px;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        footer ul {
+            list-style: none;
+            color: #fff;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        ul#menu-footer-menu li {
+            float: left;
+            margin: 2px;
+        }
+
+        ul#menu-footer-menu li a {
+            color: #fff;
+            padding: 4px;
+            display: block;
+            background-color: var(--main-color);
+            text-decoration: none;
+            transition: .4s;
+        }
+
+        ul#menu-footer-menu li a:hover {
+            color: var(--main-color);
+            background-color: #fff;
+        }
+
+        .footer-social {
+            display: inline-block;
+            padding-top: 10px;
+        }
+
+        .footer-social ul {
+            list-style: none;
+        }
+
+        .footer-social li {
+            float: left;
+            padding-right: 10px;
+        }
+
+        .footer-social li a {
+            color: #fff;
+        }
+
+        .footer-social .fa {
+            font-size: 18px;
+            border-radius: 50%;
+        }
+
+        .fa-facebook {
+            padding: 12px 16px;
+            background-color: #2D5F9A;
+        }
+
+        .fa-youtube {
+            padding: 12px 13px;
+            background-color: #cc181e;
+        }
+
+        .fa-google-plus {
+            padding: 12px 9px;
+            background-color: #bd081c;
+        }
+
+        .copyright {
+            margin-top: 15px;
+            color: white;
+            font-size: 12px;
+        }
+
+        .copyright a {
+            color: var(--main-color);
+            text-decoration: none;
+        }
+
+        .alo-phone {
+            background-color: transparent;
+            bottom: 28px;
+            cursor: pointer;
+            height: 60px;
+            left: 30px;
+            position: fixed;
+            visibility: visible;
+            width: 60px;
+            z-index: 9999;
+        }
+
+        .alo-phone>span {
+            background: var(--second-color) none repeat scroll 0 0;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+            left: -20px;
+            padding: 3px;
+            position: absolute;
+            top: 60px;
+            font-size: 12px;
+        }
+
+        .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .animated.infinite {
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+
+        .alo-ph-circle {
+            background-color: transparent;
+            border: 2px solid #00aff2;
+            border-radius: 100%;
+            height: 65px;
+            left: -7px;
+            opacity: 0.5;
+            position: absolute;
+            top: -7px;
+            width: 65px;
+        }
+
+        .alo-ph-circle-fill {
+            background-color: rgba(0, 175, 242, 0.5);
+            border: 2px solid transparent;
+            border-radius: 100%;
+            height: 50px;
+            left: 1px;
+            opacity: 0.75;
+            position: absolute;
+            top: 1px;
+            transition: all 0.5s ease 0s;
+            width: 50px;
+        }
+
+        .alo-ph-img-circle {
+            background: #00aff2 url("images/phone.png") no-repeat scroll center center;
+            border: 2px solid transparent;
+            border-radius: 100%;
+            height: 25px;
+            left: 13px;
+            opacity: 0.7;
+            position: absolute;
+            top: 13px;
+            transform-origin: 50% 50% 0;
+            transition: all 0.2s ease-in-out 0s;
+            width: 25px;
+        }
+
+        .zoomIn {
+            -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
+        }
+
+        .pulse {
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+        }
+
+        .tada {
+            -webkit-animation-name: tada;
+            animation-name: tada;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 1000px;
+            }
+
+            .navbar-brand {
+                margin: auto;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 1000px;
+            }
+
+            .navbar-brand {
+                margin: auto;
+            }
+        }
+
+        @media (min-width: 960px) {
+            .navbar-collapse {
+                background: transparent;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .navbar-collapse ul.my-nav li>a {
+                color: black !important;
+            }
+
+            .navbar-collapse ul.my-nav li:hover>a {
+                color: white !important;
+            }
+
+            .my-dropdown.dropdown-menu ul li:hover > a {
+                text-decoration: none;
+                color: var(--main-color) !important;
+            }
+
+            .dropdown:hover>.dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-menu:hover {
+                display: block;
+            }
+
+            .my-dropdown {
+                margin-top: 0;
+                width: 50rem;
+                left: -150%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <%- include('banner', {categories: categories, parentCategories: parentCategories, active: active}); %>
+
+
+    <!-- START MAIN -->
+    <main>
+        <section class="bredcrumb-wrapper">
+            <section class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Danh mục gia sư</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+
+                            <% categories.forEach(function(category){ %>
+                                    <div class="one-new">
+                                            <div class="cat-img">
+                                                <a href="/<%= category.id %>"><img width="225" height="150"
+                                                        src="<%= category.image %>"
+                                                        class="img-fluid" alt=""></a>
+                                            </div>
+                                            <div class="cat-excerpt">
+                                                <h5><a href="/<%= category.id %>"><%= category.name %></a></h5>
+                                                <span><i class="fa fa-clock-o" aria-hidden="true"></i> 19/11/2018 | <i class="fa fa-eye"
+                                                        aria-hidden="true"></i> 462</span>
+                                                <div class="at-above-post-cat-page addthis_tool"
+                                                    data-url=""></div>
+                                                <p>Bạn đang tìm cho mình một&nbsp;gia sư tiếng Nhật giỏi tại Hà Nội, một người có
+                                                    thể kèm…</p>
+                                                <div class="at-below-post-cat-page addthis_tool"
+                                                    data-url=""></div>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                            <% }) %>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="sidebar">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <h4 style="color: var(--main-color);font-size: 16px;">DANH MỤC GIA SƯ</h4>
+                                    <img class="img-fluid"
+                                        src="https://giasutamduc.net/wp-content/themes/giasuhoangyen/images/arrow.png"
+                                        alt="">
+                                </div>
+
+                                <div class="col-12">
+                                    <ul style="padding: 0;list-style: none;">
+                                            <% parentCategories.forEach(function(category) { %>
+                                                <li class="item d-flex">
+                                                        <div class="item-img mr-2">
+                                                            <a href="/category/<%= category.id %>"><img width="70"
+                                                                    height="60"
+                                                                    src="<%= category.image %>"
+                                                                    class="img-responsive wp-post-image" alt=""
+                                                                    ></a>
+                                                        </div>
+            
+                                                        <div class="item-content">
+                                                            <h5 class="mb-0" style="font-size: 15px;">
+                                                                <a href="/category/<%= category.id %>"><%= category.name %></a>
+                                                            </h5>
+                                                            <span style="font-size: 12px;color: #666;"><i class="fa fa-clock-o"
+                                                                    aria-hidden="true"></i>
+                                                                21/05/2018</span>
+                                                        </div>
+                                                    </li>
+                                            <% }) %>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- END MAIN -->
+
+
+
+    <%- include('footer', { categories: categories }); %>
+
+
+    <script src="/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

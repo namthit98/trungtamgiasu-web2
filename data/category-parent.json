@@ -1,0 +1,26 @@
+[
+  {
+    "id": "gia-su-cap-1",
+    "name": "Gia sư cấp 1",
+    "level": 1,
+    "image": "https://giasusupham.com.vn/wp-content/uploads/2015/10/lop-04.jpg"
+  },
+  {
+    "id": "gia-su-cap-2",
+    "name": "Gia sư cấp 2",
+    "level": 2,
+    "image": "https://giasusupham.com.vn/wp-content/uploads/2015/10/lop-08.jpg"
+  },
+  {
+    "id": "gia-su-cap-3",
+    "name": "Gia sư cấp 3",
+    "level": 3,
+    "image": "https://giasutamduc.net/wp-content/uploads/2017/09/dm1-225x150.jpg"
+  },
+  {
+    "id": "gia-su-ngoai-cap",
+    "name": "Gia sư ngoại cấp",
+    "level": 4,
+    "image": "https://giasusupham.com.vn/wp-content/uploads/2015/10/lop-09.jpg"
+  }
+]

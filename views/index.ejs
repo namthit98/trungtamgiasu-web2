@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <title>Trang chủ</title>
+    <style>
+        :root {
+            /* --main-color: #2E9EE6;
+            --main-color-daker: #3793ce;
+            --second-color: #ffb100; */
+
+            --main-color: #e12e2e;
+            --main-color-daker: #ba3636;
+            --second-color: #ffb100;
+        }
+
+        .banner h1, .banner h3 {
+            font-size: 10px !important;
+        }
+
+        .fqa_question {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: .5rem;
+        }
+
+        .review_box {
+            background: #fff;
+            -webkit-box-shadow: 0 1px 6px 0 rgba(117, 117, 117, .25);
+            box-shadow: 0 1px 6px 0 rgba(117, 117, 117, .25);
+            padding: 2rem 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .review_box-star {
+            color: var(--second-color);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .review_box-title {
+            font-size: 1.3rem;
+            line-height: 1.3;
+            font-weight: 600;
+        }
+
+        .review_box-customer {
+            margin-bottom: 0;
+            margin-top: 2rem;
+            font-weight: 500;
+        }
+
+        .hotline span {
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .phone {
+            color: var(--main-color);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .my-nav.nav-pills .nav-link.active {
+            background: var(--main-color);
+            color: white !important
+        }
+
+        ul.my-nav li:hover {
+            background: var(--main-color);
+            border-radius: .25rem;
+        }
+
+        ul.my-nav li:hover>a {
+            color: white !important;
+        }
+
+        .button-wrapper {
+            background: var(--main-color);
+            color: white;
+            /* width: 100vw; */
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+
+        .button-wrapper .navbar-toggler {
+            outline: none;
+            color: white;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            text-transform: uppercase;
+        }
+
+        nav.navbar {
+            padding-bottom: 0;
+        }
+
+        .banner {
+            overflow: hidden;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .navbar-collapse {
+            background: var(--main-color);
+            margin-top: -8px;
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+
+        .navbar-collapse ul.my-nav li>a {
+            color: white !important;
+        }
+
+        .my-dropdown {
+            color: black;
+            cursor: pointer;
+            background: #F1F1F1;
+            margin-left: -8px;
+            border-radius: 0;
+            width: 100vw;
+            border: none;
+        }
+
+        .my-dropdown .title {
+            color: var(--main-color) !important;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .my-dropdown ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .my-dropdown.dropdown-menu ul li>a {
+            text-decoration: none;
+            color: black !important;
+        }
+
+        .my-dropdown.dropdown-menu ul li:hover a {
+            text-decoration: none;
+            color: var(--main-color) !important;
+        }
+
+        .my-dropdown ul li:hover {
+            color: var(--main-color);
+            background: transparent;
+        }
+
+        .navbar-light .navbar-nav .show>.nav-link {
+            background: var(--main-color);
+        }
+
+        .reason {
+            background: #F7F7F7;
+        }
+
+        .reason .highlight {
+            color: var(--main-color);
+        }
+
+        .one-reason i {
+            background: var(--main-color);
+            padding: 12px;
+            border-radius: 50%;
+            color: white;
+            font-size: 18px;
+            margin-bottom: 15px;
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .one-reason h4 {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .one-reason p {
+            text-align: justify;
+        }
+
+        .call-to-action a {
+            padding: 10px 30px;
+            background-color: var(--main-color);
+            border-radius: 30px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+            border: 1px solid var(--main-color);
+            box-shadow: 0 5px var(--main-color-daker);
+            display: inline-block;
+            transition: .4s;
+            text-decoration: none;
+        }
+
+        .call-to-action a:hover {
+            color: var(--main-color);
+            background-color: #fff;
+            box-shadow: none;
+            border: 1px solid var(--main-color);
+        }
+
+        .reason.khac-biet {
+            background: #fff;
+        }
+
+        .thu-ngo {
+            background: var(--main-color);
+        }
+
+        .thu-ngo .content {
+            color: white;
+        }
+
+        .thu-ngo .text {
+            border-left: 5px solid var(--second-color);
+            padding-left: 20px;
+            font-style: italic;
+        }
+
+        .thu-ngo .title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 50px;
+        }
+
+        .album .image-card {
+            position: relative;
+            width: 100%;
+            top: 0;
+            left: 0;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .item:hover .album-title {
+            top: 0;
+            visibility: visible;
+            cursor: pointer;
+        }
+
+        .album-title {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            top: 100%;
+            padding: 0 15px 0 15px;
+            left: 0;
+            z-index: 1;
+            overflow: auto;
+            visibility: hidden;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .album-title h5 a {
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+        footer {
+            background: #0B0900;
+            padding: 20px 0;
+        }
+
+        footer .footer-title {
+            border-bottom: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        footer .footer-title h3 {
+            border-bottom: 1px solid #fff;
+            color: var(--second-color);
+            font-family: sfu_eurostilecondensed;
+            font-size: 15px;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        footer ul {
+            list-style: none;
+            color: #fff;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        ul#menu-footer-menu li {
+            float: left;
+            margin: 2px;
+        }
+
+        ul#menu-footer-menu li a {
+            color: #fff;
+            padding: 4px;
+            display: block;
+            background-color: var(--main-color);
+            text-decoration: none;
+            transition: .4s;
+        }
+
+        ul#menu-footer-menu li a:hover {
+            color: var(--main-color);
+            background-color: #fff;
+        }
+
+        .footer-social {
+            display: inline-block;
+            padding-top: 10px;
+        }
+
+        .footer-social ul {
+            list-style: none;
+        }
+
+        .footer-social li {
+            float: left;
+            padding-right: 10px;
+        }
+
+        .footer-social li a {
+            color: #fff;
+        }
+
+        .footer-social .fa {
+            font-size: 18px;
+            border-radius: 50%;
+        }
+
+        .fa-facebook {
+            padding: 12px 16px;
+            background-color: #2D5F9A;
+        }
+
+        .fa-youtube {
+            padding: 12px 13px;
+            background-color: #cc181e;
+        }
+
+        .fa-google-plus {
+            padding: 12px 9px;
+            background-color: #bd081c;
+        }
+
+        .copyright {
+            margin-top: 15px;
+            color: white;
+            font-size: 12px;
+        }
+
+        .copyright a {
+            color: var(--main-color);
+            text-decoration: none;
+        }
+
+        .alo-phone {
+            background-color: transparent;
+            bottom: 28px;
+            cursor: pointer;
+            height: 60px;
+            left: 30px;
+            position: fixed;
+            visibility: visible;
+            width: 60px;
+            z-index: 9999;
+        }
+
+        .alo-phone>span {
+            background: var(--second-color) none repeat scroll 0 0;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+            left: -20px;
+            padding: 3px;
+            position: absolute;
+            top: 60px;
+            font-size: 12px;
+        }
+
+        .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .animated.infinite {
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+
+        .alo-ph-circle {
+            background-color: transparent;
+            border: 2px solid #00aff2;
+            border-radius: 100%;
+            height: 65px;
+            left: -7px;
+            opacity: 0.5;
+            position: absolute;
+            top: -7px;
+            width: 65px;
+        }
+
+        .alo-ph-circle-fill {
+            background-color: rgba(0, 175, 242, 0.5);
+            border: 2px solid transparent;
+            border-radius: 100%;
+            height: 50px;
+            left: 1px;
+            opacity: 0.75;
+            position: absolute;
+            top: 1px;
+            transition: all 0.5s ease 0s;
+            width: 50px;
+        }
+
+        .alo-ph-img-circle {
+            background: #00aff2 url("images/phone.png") no-repeat scroll center center;
+            border: 2px solid transparent;
+            border-radius: 100%;
+            height: 25px;
+            left: 13px;
+            opacity: 0.7;
+            position: absolute;
+            top: 13px;
+            transform-origin: 50% 50% 0;
+            transition: all 0.2s ease-in-out 0s;
+            width: 25px;
+        }
+
+        .zoomIn {
+            -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
+        }
+
+        .pulse {
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+        }
+
+        .tada {
+            -webkit-animation-name: tada;
+            animation-name: tada;
+        }
+
+        .text-1 {
+            color: #EC0938;
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 40px;
+        }
+
+        .text-2 {
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 80px;
+            margin-bottom: 15px;
+        }
+
+        .text-3 {
+            color: #FFF146;
+            font-weight: bold;
+            font-size: 8px;
+            border-radius: 5px;
+            border: 1px solid #FFF146;
+            display: inline;
+            margin-left: 25px;
+            padding: 7px;
+        }
+
+        .text-4 {
+            color: #2694DC;
+            font-weight: bold;
+            font-size: 10px;
+            margin-top: 20px;
+            margin-left: 80px;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 1000px;
+            }
+
+            .navbar-brand {
+                margin: auto;
+            }
+
+            .banner h1, .banner h3 {
+                font-size: 20px !important;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .banner h1, .banner h3 {
+                font-size: 23px !important;
+            }
+
+            .container {
+                max-width: 1000px;
+            }
+
+            .navbar-brand {
+                margin: auto;
+            }
+
+            .text-1 {
+                color: #EC0938;
+                font-weight: bold;
+                font-size: 25px;
+                margin-left: 150px;
+            }
+
+            .text-2 {
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                margin-left: 250px;
+                margin-bottom: 15px;
+            }
+
+            .text-3 {
+                color: #FFF146;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 5px;
+                border: 1px solid #FFF146;
+                display: inline;
+                margin-left: 25px;
+                padding: 7px;
+            }
+
+            .text-4 {
+                color: #2694DC;
+                font-weight: bold;
+                font-size: 15px;
+                margin-top: 20px;
+                margin-left: 270px;
+            }
+        }
+
+        @media (min-width: 960px) {
+            .banner h1, .banner h3 {
+                font-size: 30px !important;
+            }
+
+            .navbar-collapse {
+                background: transparent;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .navbar-collapse ul.my-nav li>a {
+                color: black !important;
+            }
+
+            .navbar-collapse ul.my-nav li:hover>a {
+                color: white !important;
+            }
+
+            .my-dropdown.dropdown-menu ul li:hover>a {
+                text-decoration: none;
+                color: var(--main-color) !important;
+            }
+
+            .dropdown:hover>.dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-menu:hover {
+                display: block;
+            }
+
+            .my-dropdown {
+                margin-top: 0;
+                width: 50rem;
+                left: -150%;
+            }
+
+            .text-1 {
+                color: #EC0938;
+                font-weight: bold;
+                font-size: 30px;
+                margin-left: 150px;
+            }
+
+            .text-2 {
+                color: white;
+                font-weight: bold;
+                font-size: 25px;
+                margin-left: 200px;
+                margin-bottom: 15px;
+            }
+
+            .text-3 {
+                color: #FFF146;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 5px;
+                border: 1px solid #FFF146;
+                display: inline;
+                margin-left: 25px;
+                padding: 7px;
+            }
+
+            .text-4 {
+                color: #2694DC;
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 20px;
+                margin-left: 180px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+
+            .text-1 {
+                color: #EC0938;
+                font-weight: bold;
+                font-size: 20px;
+                margin-left: 190px;
+            }
+
+            .text-2 {
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                margin-left: 250px;
+                margin-bottom: 15px;
+            }
+
+            .text-3 {
+                color: #FFF146;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 5px;
+                border: 1px solid #FFF146;
+                display: inline;
+                margin-left: 25px;
+                padding: 7px;
+            }
+
+            .text-4 {
+                color: #2694DC;
+                font-weight: bold;
+                font-size: 15px;
+                margin-top: 20px;
+                margin-left: 200px;
+            }
+        }
+
+        @media (min-width: 1500px) {
+            .container {
+                max-width: 1140px;
+            }
+
+            .text-1 {
+                color: #EC0938;
+                font-weight: bold;
+                font-size: 35px;
+                margin-left: 250px;
+            }
+
+            .text-2 {
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+                margin-left: 356px;
+                margin-bottom: 15px;
+            }
+
+            .text-3 {
+                color: #FFF146;
+                font-weight: bold;
+                font-size: 30px;
+                border-radius: 5px;
+                border: 1px solid #FFF146;
+                display: inline;
+                margin-left: 53px;
+                padding: 7px;
+            }
+
+            .text-4 {
+                color: #2694DC;
+                font-weight: bold;
+                font-size: 25px;
+                margin-top: 20px;
+                margin-left: 314px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <%- include('banner', {categories: categories, parentCategories: parentCategories, active: active}); %>
+
+
+    <!-- START BANNER -->
+    <div class="banner container-fluid mt-lg-5" style="background: url('/images/banner.jpg');background-size: cover;height: 600px;">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="pt-5 pb-5 d-flex flex-column align-items-center">
+                    <h1 style="color: var(--main-color);">LIÊN HỆ TÌM GIA SƯ TẠI NHÀ MIỄN PHÍ !</h1>
+                    <h3 style="color: var(--second-color);">MIỄN PHÍ HỌC THỬ 2 BUỔI</h3>
+                    <h3 style="color: var(--second-color);" >GIA SƯ NAM-NỮ KINH NGHIỆM, HỌC PHÍ CHỈ TỪ 80K - 2 GIỜ TẠI NHÀ</h3>
+                    <h3 style="color: var(--second-color);">GỌI NGAY ĐỂ NHẬN TƯ VẤN MIỄN PHÍ</h3>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="call-to-action text-center">
+                                <h3 class="mb-3">Gọi ngay để được tư vấn</h3>
+                                <a href="tel:0383070388">038.307.0388</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END BANNER -->
+
+
+    <!-- START MAIN -->
+    <main>
+        <section class="reason p-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h3 style="text-transform: uppercase;">Những lợi ích mà bạn có được:</h3>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-4">
+                        <p><i style="color: green;font-size: 22px;" class="fa fa-check" aria-hidden="true"></i>
+                            &nbsp;Không phải mất công đi lại, gia sư đến dạy trực tiếp ngay tại nhà</p>
+                        <p><i style="color: green;font-size: 22px;" class="fa fa-check" aria-hidden="true"></i>
+                            &nbsp;Biết được tình trạng học tập của con bất cứ khi nào bạn muốn</p>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <p><i style="color: green;font-size: 22px;" class="fa fa-check" aria-hidden="true"></i>
+                            &nbsp;Con được học 1-1, tạo nên chất lượng giảng dạy tốt nhất</p>
+                        <p><i style="color: green;font-size: 22px;" class="fa fa-check" aria-hidden="true"></i>
+                            &nbsp;Không còn lo lắng mỗi khi con đối mặt với thi cử, bởi gia sư đã giúp con đã nắm vững
+                            kiến thức</p>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <p><i style="color: green;font-size: 22px;" class="fa fa-check" aria-hidden="true"></i> &nbsp;Dễ
+                            dàng quản lý giờ giấc học tập của con, không sợ con ham chơi, trốn học</p>
+                        <p><i style="color: green;font-size: 22px;" class="fa fa-check" aria-hidden="true"></i>
+                            &nbsp;Việc học tập của con được đảm bảo, trong khi bạn không phải tốn quá nhiều công sức và
+                            thời gian</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="call-to-action text-center">
+                            <h5 class="mb-3">Gọi ngay để được tư vấn</h5>
+                            <a href="tel:0383070388">038.307.0388</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reason khac-biet p-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h3 style="text-transform: uppercase;">Tại sao chọn gia sư tại Bảo Trang?</h3>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-4">
+                        <div class="icon mb-3">
+                            <img style="width: 70px;" src="/images/cam-ket-tien-bo.svg" alt="" />
+                        </div>
+
+                        <div class="body">
+                            <h3>Cam kết tiến bộ sau 10 buổi</h3>
+                            <p>Với gia sư giỏi tại Bảo Trang, con bạn sẽ nhanh chóng học tập tiến bộ, có kết quả khác
+                                biệt chỉ sau 10 buổi học: Con chăm ngoan, học tốt hơn, điểm số cao hơn.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="icon mb-3">
+                            <img style="width: 70px;" src="/images/phuong-phap-day-hieu-qua.svg" alt="" />
+                        </div>
+
+                        <div class="body">
+                            <h3>Phương pháp dạy hiệu quả</h3>
+                            <p>Con chỉ có thể học tốt nếu yêu thích việc học. Gia sư tại Bảo Trang luôn biết cách tạo
+                                động lực cho con, bằng các phương pháp giảng dạy thú vị, dễ hiểu và hiệu quả.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="icon mb-3">
+                            <img style="width: 70px;" src="/images/hoc-thu-2-buoi.svg" alt="" />
+                        </div>
+
+                        <div class="body">
+                            <h3>Học thử 2 buổi miễn phí</h3>
+                            <p>Sau 2 buổi học thử đầu tiên, nếu không hài lòng về gia sư, bạn không cần phải thanh toán
+                                học phí. Tất nhiên, Bảo Trang luôn có những gia sư khiến bạn hài lòng nhất.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="call-to-action text-center">
+                            <h5 class="mb-3">Gọi ngay để được tư vấn</h5>
+                            <a href="tel:0383070388">038.307.0388</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="pt-5 pb-5" style="background: #F7F7F7;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h2 class="mb-4">Đội ngũ 100% gia sư dạy giỏi!</h2>
+                        <p style="text-align: justify;">Đội ngũ gia sư tại Bảo Trang bao gồm những sinh viên giỏi có
+                            trình độ Đại học và các giáo viên đã có nhiều năm kinh nghiệm giảng dạy.</p>
+
+                        <p style="text-align: justify;">Tất cả gia sư đều được tuyển chọn kỹ càng, từ kiến thức chuyên
+                            môn cho đến kỹ năng sư phạm. Do vậy, bạn hoàn toàn có thể yên tâm giao phó việc học hành của
+                            con cho gia sư của chúng tôi.</p>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <h2 class="mb-4">Dịch vụ gia sư chất lượng:</h2>
+                        <p><i style="color: green;font-size: 22px;" class="fa fa-check" aria-hidden="true"></i>
+                            &nbsp;Gia sư các môn từ lớp 1 đến lớp 12, luyện thi tốt nghiệp và Đại học</p>
+                        <p><i style="color: green;font-size: 22px;" class="fa fa-check" aria-hidden="true"></i>
+                            &nbsp;Dạy kiến thức từ cơ bản đến nâng cao</p>
+                        <p><i style="color: green;font-size: 22px;" class="fa fa-check" aria-hidden="true"></i>
+                            &nbsp;Dạy kèm học sinh yếu kém, nhanh chóng lấy lại kiến thức gốc</p>
+                        <p><i style="color: green;font-size: 22px;" class="fa fa-check" aria-hidden="true"></i>
+                            &nbsp;Luyện thi học sinh giỏi, luyện thi vào trường chuyên, lớp chọn</p>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="call-to-action text-center">
+                            <h5 class="mb-3">Gọi ngay để được tư vấn</h5>
+                            <a href="tel:0383070388">038.307.0388</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-space pd-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="pl-lg-5">
+                            <img style="width: 100%" src="/images/ho-tro-tu-van-tot-nhat.png" alt="Hỗ trợ và tư vấn tốt nhất">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0 order-lg-first">
+                        <h2 class="mb-3">Hỗ trợ và tư vấn tốt nhất</h2>
+                        <p>Bộ phận quản lý đào tạo của Bảo Trang, với nhiều kinh nghiệm và giỏi chuyên môn, luôn sẵn
+                            sàng tư vấn cho quý Phụ huynh.</p>
+                        <div class="call-advisory mt-4">
+                            <i style="color: var(--main-color);font-size: 22px;" class="fa fa-phone"
+                                aria-hidden="true"></i>&nbsp;
+                            <span style="font-weight: bold;font-size: 22px;"> Gọi tư vấn: </span>
+                            <a style="font-weight: bold;font-size: 22px;" href="tel:0383070388">038.307.0388</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-space section-gray pt-5 pb-5" style="background: #F7F7F7">
+            <div class="container">
+
+                <div class="text-center">
+                    <h2 class="mb-3">Đánh giá của khách hàng</h2>
+                    <p>Hãy xem những người khác nói gì trong các đánh giá khách hàng của chúng tôi.</p>
+                </div>
+
+                <div class="row mt-5 text-444">
+
+                    <div class="col-lg-4">
+                        <div class="review_box text-center">
+                            <div class="review_box-star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <p class="review_box-title">"Nhanh chóng và hiệu quả"</p>
+                            <p class="review_box-body">"Sau một thời gian ngắn, con tôi đã học tập tiến bộ. Hiện tại tôi
+                                hoàn toàn tin tưởng và giao phó công việc học hành của con cho gia sư."</p>
+                            <p class="review_box-customer">Chị Đặng Thị Loan, Giảng Viên Luật trường Học Viện Chính Trị
+                                HCM</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="review_box text-center">
+                            <div class="review_box-star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <p class="review_box-title">"Thông tin gia sư đầy đủ"</p>
+                            <p class="review_box-body">"Mọi thông tin mà tôi cần biết đều có trong hồ sơ của gia sư.
+                                Điều này minh chứng cho việc trung tâm đã phỏng vấn và tuyển dụng gia sư rất chặt chẽ."
+                            </p>
+                            <p class="review_box-customer">Chị Nguyễn Thị Xinh, Công chứng viên tại VP Công Chứng Tạ
+                                Hiền</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="review_box text-center">
+                            <div class="review_box-star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <p class="review_box-title">"Dịch vụ chuyên nghiệp"</p>
+                            <p class="review_box-body">"Không giống những trung tâm khác, dịch vụ gia sư ở đây rất
+                                chuyên nghiệp và chất lượng, cả ở cách giảng dạy hay chăm sóc khách hàng."</p>
+                            <p class="review_box-customer">Anh Nguyễn Văn Định, Giám đốc Miền Bắc Công ty KTL Minh Dũng
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="call-to-action text-center">
+                            <h5 class="mb-3">Gọi ngay để được tư vấn</h5>
+                            <a href="tel:0383070388">038.307.0388</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-space pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+
+                        <div class="text-center">
+                            <h2 class="mb-3">Những câu hỏi thường gặp</h2>
+                        </div>
+
+                        <div class="mt-5 text-444">
+
+                            <div class="fqa mb-4">
+                                <p class="fqa_question">Sau thời gian bao lâu tôi sẽ có được gia sư?</p>
+                                <p class="fqa_anwer text-muted">Tùy vào lớp học của bạn có nhiều gia sư đăng ký nhận lớp hay không.
+                                    (Các điều kiện về khu vực của bạn có xa các trường Đại học? Môn học có phổ biến? Yêu
+                                    cầu là giáo viên hay sinh viên?)</p>
+                                <p class="text-muted">Thông thường, thời gian có được gia sư là khoảng từ 1 đến 5 ngày làm việc.</p>
+                            </div>
+
+                            <div class="fqa mb-4">
+                                <p class="fqa_question">Như thế nào là học thử 2 buổi?</p>
+                                <p class="fqa_anwer text-muted">Để hỗ trợ bạn kiểm tra trình độ của gia sư, chúng tôi đưa ra chính
+                                    sách học thử trong 2 buổi đầu tiên. Sau 2 buổi này, nếu bạn không đồng ý nhận gia
+                                    sư, bạn không phải thanh toán học phí.</p>
+                            </div>
+
+                            <div class="fqa mb-4">
+                                <p class="fqa_question">Mức học phí là bao nhiêu?</p>
+                                <p class="fqa_anwer text-muted">Mức học phí sẽ phụ thuộc vào nhiều yếu tố như: lớp học, môn học, số
+                                    lượng học sinh và khoảng cách từ địa điểm học đến các trường Đại học. Chúng tôi sẽ
+                                    đưa ra mức học phí cụ thể sau khi tiếp nhận những thông tin cần thiết từ bạn.</p>
+                                <p class="text-muted">Chúng tôi luôn đưa ra mức học phí phù hợp nhất để vừa tiết kiệm cho bạn, vừa đảm bảo
+                                    gia sư thấy được công sức của gia sư sẽ được trả công xứng đáng và giảng dạy tận
+                                    tâm.</p>
+                            </div>
+
+                            <div class="fqa mb-4">
+                                <p class="fqa_question">Thanh toán học phí như thế nào?</p>
+                                <p class="fqa_anwer text-muted">Bạn sẽ thanh toán học phí trực tiếp cho gia sư. Thời điểm thanh
+                                    toán sẽ vào cuối tháng. Số tiền thanh toán = học phí mỗi buổi * số buổi dạy thực tế
+                                    trong tháng.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="call-to-action text-center">
+                                    <h5 class="mb-3">Gọi ngay để được tư vấn</h5>
+                                    <a href="tel:0383070388">038.307.0388</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- END MAIN -->
+
+    <%- include('footer', { categories: categories }); %>
+
+    <script src="/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#messenger').tooltip()
+            $('#zalo').tooltip()
+
+            $('.owl-carousel.one').owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 4,
+                    }
+                }
+            })
+
+            setInterval(() => {
+                $('.owl-carousel.one').trigger('next.owl')
+            }, 5000)
+
+            $('.owl-carousel.two').owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 4,
+                    }
+                }
+            })
+
+            setInterval(() => {
+                $('.owl-carousel.two').trigger('next.owl')
+            }, 4500)
+        });
+    </script>
+</body>
+
+</html>

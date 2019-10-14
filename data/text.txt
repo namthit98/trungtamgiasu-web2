@@ -1,0 +1,8 @@
+Tâm Đức => cao cấp Bảo Trang
+img-responsive => img-fluid
+Thăng Long Hà Nội => cao cấp Bảo Trang
+Thăng Long => cao cấp Bảo Trang
+
+
+0976.433.032 => 038.307.0388
+tel:0976433032 => tel:0383070388

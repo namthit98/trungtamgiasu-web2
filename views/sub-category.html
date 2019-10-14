@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <title>Trang chủ</title>
+    <style>
+        :root {
+            --main-color: #2E9EE6;
+            --second-color: #ffb100;
+
+            /* --main-color: #ff0000;
+            --second-color: #ff4d00;    */
+        }
+
+        .hotline span {
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .phone {
+            color: var(--main-color);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .my-nav.nav-pills .nav-link.active {
+            background: var(--main-color);
+            color: white !important
+        }
+
+        ul.my-nav li:hover {
+            background: var(--main-color);
+            border-radius: .25rem;
+        }
+
+        ul.my-nav li:hover>a {
+            color: white !important;
+        }
+
+        .button-wrapper {
+            background: var(--main-color);
+            color: white;
+            /* width: 100vw; */
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+
+        .button-wrapper .navbar-toggler {
+            outline: none;
+            color: white;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            text-transform: uppercase;
+        }
+
+        nav.navbar {
+            padding-bottom: 0;
+        }
+
+        .banner {
+            overflow: hidden;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .navbar-collapse {
+            background: var(--main-color);
+            margin-top: -8px;
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+
+        .navbar-collapse ul.my-nav li>a {
+            color: white !important;
+        }
+
+        .my-dropdown {
+            color: black;
+            cursor: pointer;
+            background: #F1F1F1;
+            margin-left: -8px;
+            border-radius: 0;
+            width: 100vw;
+            border: none;
+        }
+
+        .my-dropdown .title {
+            color: var(--main-color) !important;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .my-dropdown ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .my-dropdown ul li:hover {
+            color: var(--main-color);
+            background: transparent;
+        }
+
+        .my-dropdown.dropdown-menu ul li>a {
+            text-decoration: none;
+            color: black !important;
+        }
+
+        .my-dropdown.dropdown-menu ul li:hover a {
+            text-decoration: none;
+            color: var(--main-color) !important;
+        }
+
+        .navbar-light .navbar-nav .show>.nav-link {
+            background: var(--main-color);
+        }
+
+        .bredcrumb-wrapper {
+            background: #F5F5F5;
+            margin-bottom: 10px;
+        }
+
+        .bredcrumb-wrapper ol.breadcrumb {
+            background: transparent;
+            margin: 0;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .breadcrumb-item a {
+            text-decoration: none;
+        }
+
+        .sidebar .item {
+            border-bottom: 2px dashed var(--second-color);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar .item:last-child {
+            border-bottom: none;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        .sidebar .item-content h5 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .sidebar .item-content h5 a:hover {
+            color: var(--main-color);
+        }
+
+        .one-new {
+            display: inline-block;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .one-new .cat-img {
+            float: left;
+            width: 30%;
+        }
+
+        .one-new .cat-excerpt {
+            float: left;
+            width: 70%;
+            padding-left: 15px;
+        }
+
+        .one-new .cat-excerpt h5 {
+            margin-top: 0;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+        .one-new .cat-excerpt>span {
+            color: #666;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+
+        .one-new .cat-excerpt p {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        footer {
+            background: #0B0900;
+            padding: 20px 0;
+        }
+
+        footer .footer-title {
+            border-bottom: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        footer .footer-title h3 {
+            border-bottom: 1px solid #fff;
+            color: var(--second-color);
+            font-family: sfu_eurostilecondensed;
+            font-size: 15px;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        footer ul {
+            list-style: none;
+            color: #fff;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        ul#menu-footer-menu li {
+            float: left;
+            margin: 2px;
+        }
+
+        ul#menu-footer-menu li a {
+            color: #fff;
+            padding: 4px;
+            display: block;
+            background-color: var(--main-color);
+            text-decoration: none;
+            transition: .4s;
+        }
+
+        ul#menu-footer-menu li a:hover {
+            color: var(--main-color);
+            background-color: #fff;
+        }
+
+        .footer-social {
+            display: inline-block;
+            padding-top: 10px;
+        }
+
+        .footer-social ul {
+            list-style: none;
+        }
+
+        .footer-social li {
+            float: left;
+            padding-right: 10px;
+        }
+
+        .footer-social li a {
+            color: #fff;
+        }
+
+        .footer-social .fa {
+            font-size: 18px;
+            border-radius: 50%;
+        }
+
+        .fa-facebook {
+            padding: 12px 16px;
+            background-color: #2D5F9A;
+        }
+
+        .fa-youtube {
+            padding: 12px 13px;
+            background-color: #cc181e;
+        }
+
+        .fa-google-plus {
+            padding: 12px 9px;
+            background-color: #bd081c;
+        }
+
+        .copyright {
+            margin-top: 15px;
+            color: white;
+            font-size: 12px;
+        }
+
+        .copyright a {
+            color: var(--main-color);
+            text-decoration: none;
+        }
+
+        .alo-phone {
+            background-color: transparent;
+            bottom: 28px;
+            cursor: pointer;
+            height: 60px;
+            left: 30px;
+            position: fixed;
+            visibility: visible;
+            width: 60px;
+            z-index: 9999;
+        }
+
+        .alo-phone>span {
+            background: var(--second-color) none repeat scroll 0 0;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+            left: -20px;
+            padding: 3px;
+            position: absolute;
+            top: 60px;
+            font-size: 12px;
+        }
+
+        .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .animated.infinite {
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+
+        .alo-ph-circle {
+            background-color: transparent;
+            border: 2px solid #00aff2;
+            border-radius: 100%;
+            height: 65px;
+            left: -7px;
+            opacity: 0.5;
+            position: absolute;
+            top: -7px;
+            width: 65px;
+        }
+
+        .alo-ph-circle-fill {
+            background-color: rgba(0, 175, 242, 0.5);
+            border: 2px solid transparent;
+            border-radius: 100%;
+            height: 50px;
+            left: 1px;
+            opacity: 0.75;
+            position: absolute;
+            top: 1px;
+            transition: all 0.5s ease 0s;
+            width: 50px;
+        }
+
+        .alo-ph-img-circle {
+            background: #00aff2 url("images/phone.png") no-repeat scroll center center;
+            border: 2px solid transparent;
+            border-radius: 100%;
+            height: 25px;
+            left: 13px;
+            opacity: 0.7;
+            position: absolute;
+            top: 13px;
+            transform-origin: 50% 50% 0;
+            transition: all 0.2s ease-in-out 0s;
+            width: 25px;
+        }
+
+        .zoomIn {
+            -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
+        }
+
+        .pulse {
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+        }
+
+        .tada {
+            -webkit-animation-name: tada;
+            animation-name: tada;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 1000px;
+            }
+
+            .navbar-brand {
+                margin: auto;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 1000px;
+            }
+
+            .navbar-brand {
+                margin: auto;
+            }
+        }
+
+        @media (min-width: 960px) {
+            .navbar-collapse {
+                background: transparent;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .navbar-collapse ul.my-nav li>a {
+                color: black !important;
+            }
+
+            .navbar-collapse ul.my-nav li:hover>a {
+                color: white !important;
+            }
+
+            .my-dropdown.dropdown-menu ul li:hover > a {
+                text-decoration: none;
+                color: var(--main-color) !important;
+            }
+
+            .dropdown:hover>.dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-menu:hover {
+                display: block;
+            }
+
+            .my-dropdown {
+                margin-top: 0;
+                width: 40rem;
+                left: -100%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- START NAV -->
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light " style="width: 100%;">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="logo" style="width: 100%;height: 100px;">
+                </a>
+                <div style="width: 100%;">
+                    <div class="hotline text-center text-lg-right mb-4">
+                        <span>hotline (24/7):</span>
+                        <a class="phone" href="tel:0976433032">0976.433.032</a>
+                    </div>
+                    <div class="button-wrapper d-flex flex-row-reverse">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span>Menu</span> <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="height: 100%;">
+                        <ul class="my-nav navbar-nav nav-pills ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="/category.html"
+                                    role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                    Danh mục gia sư
+                                </a>
+                                <div class="my-dropdown dropdown-menu">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-6 mb-4 mb-md-0 col-md-3">
+                                                <a class="title" href="/sub-category.html"><i
+                                                        class="fa fa-graduation-cap" aria-hidden="true"></i> Gia sư cấp
+                                                    1</a>
+                                                <ul>
+                                                        <li><a href="/new.html">lowp 1</a></li>
+                                                        <li>lowp 12</li>
+                                                    <li>lowp 13</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-6 mb-4 mb-md-0 col-md-3">
+                                                <a class="title" href="/sub-category.html"><i
+                                                        class="fa fa-graduation-cap" aria-hidden="true"></i> Gia sư cấp
+                                                    2</a>
+                                                <ul>
+                                                    <li>lowp 11</li>
+                                                    <li>lowp 12</li>
+                                                    <li>lowp 13</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-6 mb-4 mb-md-0 col-md-3">
+                                                <a class="title" href="/sub-category.html"><i
+                                                        class="fa fa-graduation-cap" aria-hidden="true"></i> Gia sư cấp
+                                                    3</a>
+                                                <ul>
+                                                    <li>lowp 11</li>
+                                                    <li>lowp 12</li>
+                                                    <li>lowp 13</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-6 mb-4 mb-md-0 col-md-3">
+                                                <a class="title" href="/sub-category.html"><i
+                                                        class="fa fa-graduation-cap" aria-hidden="true"></i> Gia sư cấp
+                                                    4</a>
+                                                <ul>
+                                                    <li>1lowp 1</li>
+                                                    <li>2lowp 1</li>
+                                                    <li>lowp 13</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/library.html">
+                                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                    Thư viện hình ảnh
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact.html">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- END NAV -->
+
+    <!-- START MAIN -->
+    <main>
+        <section class="bredcrumb-wrapper">
+            <section class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item" aria-current="page"><a href="#">Danh mục gia sư</a> </li>
+                                <li class="breadcrumb-item active" aria-current="page">Gia sư tiếng anh
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+
+                        <div class="one-new">
+                            <div class="cat-img">
+                                <a href="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/"><img width="225" height="150"
+                                        src="http://giasutamduc.net/wp-content/uploads/2018/03/nhật-225x150.jpg"
+                                        class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="cat-excerpt">
+                                <h5><a href="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/">GIA SƯ TIẾNG NHẬT HÀ
+                                        NỘI</a></h5>
+                                <span><i class="fa fa-clock-o" aria-hidden="true"></i> 19/11/2018 | <i class="fa fa-eye"
+                                        aria-hidden="true"></i> 462</span>
+                                <div class="at-above-post-cat-page addthis_tool"
+                                    data-url="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/"></div>
+                                <p>Bạn đang tìm cho mình một&nbsp;gia sư tiếng Nhật giỏi tại Hà Nội, một người có
+                                    thể kèm…</p>
+                                <div class="at-below-post-cat-page addthis_tool"
+                                    data-url="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/"></div>
+                                <p></p>
+                            </div>
+                        </div>
+
+
+                        <div class="one-new">
+                            <div class="cat-img">
+                                <a href="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/"><img width="225" height="150"
+                                        src="http://giasutamduc.net/wp-content/uploads/2018/03/nhật-225x150.jpg"
+                                        class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="cat-excerpt">
+                                <h5><a href="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/">GIA SƯ TIẾNG NHẬT HÀ
+                                        NỘI</a></h5>
+                                <span><i class="fa fa-clock-o" aria-hidden="true"></i> 19/11/2018 | <i class="fa fa-eye"
+                                        aria-hidden="true"></i> 462</span>
+                                <div class="at-above-post-cat-page addthis_tool"
+                                    data-url="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/"></div>
+                                <p>Bạn đang tìm cho mình một&nbsp;gia sư tiếng Nhật giỏi tại Hà Nội, một người có
+                                    thể kèm…</p>
+                                <div class="at-below-post-cat-page addthis_tool"
+                                    data-url="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/"></div>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="one-new">
+                            <div class="cat-img">
+                                <a href="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/"><img width="225" height="150"
+                                        src="http://giasutamduc.net/wp-content/uploads/2018/03/nhật-225x150.jpg"
+                                        class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="cat-excerpt">
+                                <h5><a href="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/">GIA SƯ TIẾNG NHẬT HÀ
+                                        NỘI</a></h5>
+                                <span><i class="fa fa-clock-o" aria-hidden="true"></i> 19/11/2018 | <i class="fa fa-eye"
+                                        aria-hidden="true"></i> 462</span>
+                                <div class="at-above-post-cat-page addthis_tool"
+                                    data-url="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/"></div>
+                                <p>Bạn đang tìm cho mình một&nbsp;gia sư tiếng Nhật giỏi tại Hà Nội, một người có
+                                    thể kèm…</p>
+                                <div class="at-below-post-cat-page addthis_tool"
+                                    data-url="http://giasutamduc.net/gia-su-tieng-nhat-ha-noi/"></div>
+                                <p></p>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="sidebar">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <h4 style="color: var(--main-color);font-size: 16px;">DANH MỤC GIA SƯ</h4>
+                                    <img class="img-fluid"
+                                        src="http://giasutamduc.net/wp-content/themes/giasuhoangyen/images/arrow.png"
+                                        alt="">
+                                </div>
+
+                                <div class="col-12">
+                                    <ul style="padding: 0;list-style: none;">
+                                        <li class="item d-flex">
+                                            <div class="item-img mr-2">
+                                                <a href="http://giasutamduc.net/luyen-viet-chu-dep/"><img width="70"
+                                                        height="60"
+                                                        src="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg"
+                                                        class="img-responsive wp-post-image" alt=""
+                                                        srcset="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg 70w, http://giasutamduc.net/wp-content/uploads/2018/05/123-262x225.jpg 262w"
+                                                        sizes="(max-width: 70px) 100vw, 70px"></a>
+                                            </div>
+
+                                            <div class="item-content">
+                                                <h5 class="mb-0" style="font-size: 15px;">
+                                                    <a href="http://giasutamduc.net/luyen-viet-chu-dep/">Luyện viết
+                                                        chữ đẹp</a>
+                                                </h5>
+                                                <span style="font-size: 12px;color: #666;"><i class="fa fa-clock-o"
+                                                        aria-hidden="true"></i>
+                                                    21/05/2018</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="item d-flex">
+                                            <div class="item-img mr-2">
+                                                <a href="http://giasutamduc.net/luyen-viet-chu-dep/"><img width="70"
+                                                        height="60"
+                                                        src="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg"
+                                                        class="img-responsive wp-post-image" alt=""
+                                                        srcset="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg 70w, http://giasutamduc.net/wp-content/uploads/2018/05/123-262x225.jpg 262w"
+                                                        sizes="(max-width: 70px) 100vw, 70px"></a>
+                                            </div>
+
+                                            <div class="item-content">
+                                                <h5 class="mb-0" style="font-size: 15px;">
+                                                    <a href="http://giasutamduc.net/luyen-viet-chu-dep/">Luyện viết
+                                                        chữ đẹp</a>
+                                                </h5>
+                                                <span style="font-size: 12px;color: #666;"><i class="fa fa-clock-o"
+                                                        aria-hidden="true"></i>
+                                                    21/05/2018</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="item d-flex">
+                                            <div class="item-img mr-2">
+                                                <a href="http://giasutamduc.net/luyen-viet-chu-dep/"><img width="70"
+                                                        height="60"
+                                                        src="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg"
+                                                        class="img-responsive wp-post-image" alt=""
+                                                        srcset="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg 70w, http://giasutamduc.net/wp-content/uploads/2018/05/123-262x225.jpg 262w"
+                                                        sizes="(max-width: 70px) 100vw, 70px"></a>
+                                            </div>
+
+                                            <div class="item-content">
+                                                <h5 class="mb-0" style="font-size: 15px;">
+                                                    <a href="http://giasutamduc.net/luyen-viet-chu-dep/">Luyện viết
+                                                        chữ đẹp</a>
+                                                </h5>
+                                                <span style="font-size: 12px;color: #666;"><i class="fa fa-clock-o"
+                                                        aria-hidden="true"></i>
+                                                    21/05/2018</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="item d-flex">
+                                            <div class="item-img mr-2">
+                                                <a href="http://giasutamduc.net/luyen-viet-chu-dep/"><img width="70"
+                                                        height="60"
+                                                        src="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg"
+                                                        class="img-responsive wp-post-image" alt=""
+                                                        srcset="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg 70w, http://giasutamduc.net/wp-content/uploads/2018/05/123-262x225.jpg 262w"
+                                                        sizes="(max-width: 70px) 100vw, 70px"></a>
+                                            </div>
+
+                                            <div class="item-content">
+                                                <h5 class="mb-0" style="font-size: 15px;">
+                                                    <a href="http://giasutamduc.net/luyen-viet-chu-dep/">Luyện viết
+                                                        chữ đẹp</a>
+                                                </h5>
+                                                <span style="font-size: 12px;color: #666;"><i class="fa fa-clock-o"
+                                                        aria-hidden="true"></i>
+                                                    21/05/2018</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="item d-flex">
+                                            <div class="item-img mr-2">
+                                                <a href="http://giasutamduc.net/luyen-viet-chu-dep/"><img width="70"
+                                                        height="60"
+                                                        src="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg"
+                                                        class="img-responsive wp-post-image" alt=""
+                                                        srcset="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg 70w, http://giasutamduc.net/wp-content/uploads/2018/05/123-262x225.jpg 262w"
+                                                        sizes="(max-width: 70px) 100vw, 70px"></a>
+                                            </div>
+
+                                            <div class="item-content">
+                                                <h5 class="mb-0" style="font-size: 15px;">
+                                                    <a href="http://giasutamduc.net/luyen-viet-chu-dep/">Luyện viết
+                                                        chữ đẹp</a>
+                                                </h5>
+                                                <span style="font-size: 12px;color: #666;"><i class="fa fa-clock-o"
+                                                        aria-hidden="true"></i>
+                                                    21/05/2018</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="item d-flex">
+                                            <div class="item-img mr-2">
+                                                <a href="http://giasutamduc.net/luyen-viet-chu-dep/"><img width="70"
+                                                        height="60"
+                                                        src="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg"
+                                                        class="img-responsive wp-post-image" alt=""
+                                                        srcset="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg 70w, http://giasutamduc.net/wp-content/uploads/2018/05/123-262x225.jpg 262w"
+                                                        sizes="(max-width: 70px) 100vw, 70px"></a>
+                                            </div>
+
+                                            <div class="item-content">
+                                                <h5 class="mb-0" style="font-size: 15px;">
+                                                    <a href="http://giasutamduc.net/luyen-viet-chu-dep/">Luyện viết
+                                                        chữ đẹp</a>
+                                                </h5>
+                                                <span style="font-size: 12px;color: #666;"><i class="fa fa-clock-o"
+                                                        aria-hidden="true"></i>
+                                                    21/05/2018</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="item d-flex">
+                                            <div class="item-img mr-2">
+                                                <a href="http://giasutamduc.net/luyen-viet-chu-dep/"><img width="70"
+                                                        height="60"
+                                                        src="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg"
+                                                        class="img-responsive wp-post-image" alt=""
+                                                        srcset="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg 70w, http://giasutamduc.net/wp-content/uploads/2018/05/123-262x225.jpg 262w"
+                                                        sizes="(max-width: 70px) 100vw, 70px"></a>
+                                            </div>
+
+                                            <div class="item-content">
+                                                <h5 class="mb-0" style="font-size: 15px;">
+                                                    <a href="http://giasutamduc.net/luyen-viet-chu-dep/">Luyện viết
+                                                        chữ đẹp</a>
+                                                </h5>
+                                                <span style="font-size: 12px;color: #666;"><i class="fa fa-clock-o"
+                                                        aria-hidden="true"></i>
+                                                    21/05/2018</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="item d-flex">
+                                            <div class="item-img mr-2">
+                                                <a href="http://giasutamduc.net/luyen-viet-chu-dep/"><img width="70"
+                                                        height="60"
+                                                        src="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg"
+                                                        class="img-responsive wp-post-image" alt=""
+                                                        srcset="http://giasutamduc.net/wp-content/uploads/2018/05/123-70x60.jpg 70w, http://giasutamduc.net/wp-content/uploads/2018/05/123-262x225.jpg 262w"
+                                                        sizes="(max-width: 70px) 100vw, 70px"></a>
+                                            </div>
+
+                                            <div class="item-content">
+                                                <h5 class="mb-0" style="font-size: 15px;">
+                                                    <a href="http://giasutamduc.net/luyen-viet-chu-dep/">Luyện viết
+                                                        chữ đẹp</a>
+                                                </h5>
+                                                <span style="font-size: 12px;color: #666;"><i class="fa fa-clock-o"
+                                                        aria-hidden="true"></i>
+                                                    21/05/2018</span>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- END MAIN -->
+
+
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-title">
+                        <h3>Gia Sư Tâm Đức</h3>
+                    </div>
+                    <ul class="footer-ul">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Cơ sở 1: 380 Giải Phóng, Hoàng Mai, Hà
+                            Nội.</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Cơ sở 2: 200 Ngô Gia Tự, Long Biên, Hà
+                            Nội.</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Cơ sở 3: 196 Phú Diễn, Từ Liêm, Hà Nội.
+                        </li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Cơ sở 4: Tòa N03 , Số 40 Trần Quý Kiên,
+                            Cầu Giấy</li>
+                        <li><i class="fa fa-mobile" aria-hidden="true"></i> Hotline (24/7): 0976.433.032 (Ms Thúy)</li>
+                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: giasutamduc.net@gmail.com</li>
+                    </ul>
+
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="https://facebook.com" title="https://facebook.com" target="_blank"><i
+                                        class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://youtube.com" title="https://youtube.com" target="_blank"><i
+                                        class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            <li><a href="https://plus.google.com/?hl=vi" title="https://plus.google.com/?hl=vi"
+                                    target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-title">
+                        <h3>GIA SƯ TẠI NHÀ - LỚP HỌC TẠI TRUNG TÂM</h3>
+                    </div>
+                    <ul id="menu-footer-menu" class="footer-dv">
+                        <li id="menu-item-134"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134"><a
+                                href="http://giasutamduc.net/category/danh-muc-gia-su/gia-su-cap-1/">Gia sư cấp 1</a>
+                        </li>
+                        <li id="menu-item-135"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-135"><a
+                                href="http://giasutamduc.net/category/danh-muc-gia-su/gia-su-cap-2/">Gia sư cấp 2</a>
+                        </li>
+                        <li id="menu-item-136"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136"><a
+                                href="http://giasutamduc.net/category/danh-muc-gia-su/gia-su-cap-3/">Gia sư cấp 3</a>
+                        </li>
+                        <li id="menu-item-138"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-138"><a
+                                href="http://giasutamduc.net/category/danh-muc-gia-su/gia-su-ngoai-ngu/">Gia sư ngoại
+                                ngữ</a></li>
+                        <li id="menu-item-137"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-137"><a
+                                href="http://giasutamduc.net/category/danh-muc-gia-su/gia-su-nang-khieu/">Gia sư năng
+                                khiếu</a></li>
+                        <li id="menu-item-417"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-417"><a
+                                href="http://giasutamduc.net/category/danh-muc-gia-su/">Danh mục gia sư</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-title">
+                        <h3>BẢN ĐỒ</h3>
+                    </div>
+                    <div class="map">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6917268654747!2d105.80187431549449!3d21.00499088601137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9e4385a815%3A0x1e653ca5d98a35df!2zxJDGsOG7nW5nIEzDqiBWxINuIEzGsMahbmcsIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1570506794213!5m2!1sen!2s"
+                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright row">
+                <div class="col-md-6">
+                    <span>© Copyright 2019 All rights reserved. By <a href="http://giasutamduc.net/">Gia Sư Tâm
+                            Đức</a></span>
+                </div>
+
+                <div class="col-md-6 text-right">
+                    <span class="other">Developed by <a href="tel:0389992570" title="TrungDT">NamTH</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <div class="phone_fixed">
+        <a href="tel:0976433032" title="0976.433.032">
+            <div class="alo-phone">
+                <div class="animated infinite zoomIn alo-ph-circle"></div>
+                <div class="animated infinite pulse alo-ph-circle-fill"></div>
+                <div class="animated infinite tada alo-ph-img-circle"></div>
+                <span>0976.433.032</span>
+            </div>
+        </a>
+
+    </div>
+
+    <script src="./js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
